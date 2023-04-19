@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+    
+</head>
+
+
+  
+<body class="content">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js"></script>
+    <script src="crudcrud.js"></script>
+    <h1 class="header text-center bg-primary text-white pt-3 pb-3">
+        Expense tracker
+      </h1>
+            
+            <form action="#" onsubmit="saveToLocalStorage(event)">
+                <label>Choose expense amount :</label>
+                <input id="amt" class="frm" type="number"  name="amount" required>
+                <label>Choose description :</label>
+                <input id="des" class="frm" type="text"  name="description" required>
+                <label for="categeory">Choose a categeory:</label>
+                <select name="categeory" id="categeory">
+                    <option value="Grocery">Grocery</option>
+                    <option value="Clothes">Clothes</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Miscellaneous">Miscellaneous</option>
+                </select>
+               <input type="submit" class='btn-btn-primary' id="makecall" name="makecall" value="Add Expense"> 
+            </form>
+            <ul id="listOfUsers"></ul>
+
+           
+</body>
+</html>
